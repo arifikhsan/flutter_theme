@@ -21,7 +21,7 @@ class App extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           brightness: Brightness.dark,
           centerTitle: true,
-        ) ,
+        ),
         // brightness: Brightness.dark,
         textTheme: const TextTheme(
           headline1: TextStyle(fontSize: 64, fontWeight: FontWeight.bold),
@@ -39,6 +39,20 @@ class App extends StatelessWidget {
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           foregroundColor: Colors.white,
         ),
+        // elevatedButtonTheme: ElevatedButtonThemeData(
+        //   style: ElevatedButton.styleFrom(
+        //     textStyle: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
+        //   ),
+        // ),
+        // textButtonTheme: TextButtonThemeData(
+        //   style: TextButton.styleFrom(
+        //     textStyle: TextStyle(
+        //       color: Colors.deepOrange,
+        //       fontSize: 30,
+        //       fontWeight: FontWeight.bold,
+        //     ),
+        //   ),
+        // ),
       ),
       localizationsDelegates: const [
         AppLocalizations.delegate,

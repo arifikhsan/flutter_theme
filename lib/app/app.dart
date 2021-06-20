@@ -18,7 +18,10 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         accentColor: const Color(0xFF13B9FF),
-        appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
+        appBarTheme: const AppBarTheme(
+          brightness: Brightness.dark,
+          centerTitle: true,
+        ) ,
         // brightness: Brightness.dark,
         textTheme: const TextTheme(
           headline1: TextStyle(fontSize: 64, fontWeight: FontWeight.bold),
@@ -32,6 +35,9 @@ class App extends StatelessWidget {
           ),
           bodyText1: TextStyle(fontSize: 16),
           bodyText2: TextStyle(fontSize: 16),
+        ),
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          foregroundColor: Colors.white,
         ),
       ),
       localizationsDelegates: const [
